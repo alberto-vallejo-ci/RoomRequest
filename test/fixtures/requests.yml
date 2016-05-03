@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  dateRequest: 2016-05-03
+  dateEventI: 2016-05-03
+  dateEventF: 2016-05-03
+  timeEvent: 2016-05-03 15:05:02
+  eventCode: 1
+  nameRequesting: MyString
+  phoneNum: MyString
+  place: MyString
+
+two:
+  dateRequest: 2016-05-03
+  dateEventI: 2016-05-03
+  dateEventF: 2016-05-03
+  timeEvent: 2016-05-03 15:05:02
+  eventCode: 1
+  nameRequesting: MyString
+  phoneNum: MyString
+  place: MyString

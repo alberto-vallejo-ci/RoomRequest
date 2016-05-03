@@ -1,0 +1,33 @@
+<%= form_for(@asistant) do |f| %>
+  <% if @asistant.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@asistant.errors.count, "error") %> prohibited this asistant from being saved:</h2>
+
+      <ul>
+      <% @asistant.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :code %><br>
+    <%= f.number_field :code %>
+  </div>
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :carer %><br>
+    <%= f.text_field :carer %>
+  </div>
+  <div class="field">
+    <%= f.label :codeEvent %><br>
+    <%= f.number_field :codeEvent %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

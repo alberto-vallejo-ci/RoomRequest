@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Asistants</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Code</th>
+      <th>Name</th>
+      <th>Carer</th>
+      <th>Codeevent</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @asistants.each do |asistant| %>
+      <tr>
+        <td><%= asistant.code %></td>
+        <td><%= asistant.name %></td>
+        <td><%= asistant.carer %></td>
+        <td><%= asistant.codeEvent %></td>
+        <td><%= link_to 'Show', asistant %></td>
+        <td><%= link_to 'Edit', edit_asistant_path(asistant) %></td>
+        <td><%= link_to 'Destroy', asistant, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Asistant', new_asistant_path %>

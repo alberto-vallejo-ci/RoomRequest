@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  codeEvent: 1
+  eventType: MyString
+  ponenteName: MyString
+  personInCharge: MyString
+  phoneNum: MyString
+  forniture: false
+
+two:
+  codeEvent: 1
+  eventType: MyString
+  ponenteName: MyString
+  personInCharge: MyString
+  phoneNum: MyString
+  forniture: false

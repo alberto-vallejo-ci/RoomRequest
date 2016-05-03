@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Daterequest:</strong>
+  <%= @request.dateRequest %>
+</p>
+
+<p>
+  <strong>Dateeventi:</strong>
+  <%= @request.dateEventI %>
+</p>
+
+<p>
+  <strong>Dateeventf:</strong>
+  <%= @request.dateEventF %>
+</p>
+
+<p>
+  <strong>Timeevent:</strong>
+  <%= @request.timeEvent %>
+</p>
+
+<p>
+  <strong>Eventcode:</strong>
+  <%= @request.eventCode %>
+</p>
+
+<p>
+  <strong>Namerequesting:</strong>
+  <%= @request.nameRequesting %>
+</p>
+
+<p>
+  <strong>Phonenum:</strong>
+  <%= @request.phoneNum %>
+</p>
+
+<p>
+  <strong>Place:</strong>
+  <%= @request.place %>
+</p>
+
+<%= link_to 'Edit', edit_request_path(@request) %> |
+<%= link_to 'Back', requests_path %>
