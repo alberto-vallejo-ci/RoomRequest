@@ -1,10 +1,10 @@
-<%= form_for(@event) do |f| %>
-  <% if @event.errors.any? %>
+<%= form_for(event_form, as: :event,  url: event_form.action, method: event_form.method) do |f| %>
+  <% if event_form.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@event.errors.count, "error") %> prohibited this event from being saved:</h2>
+      <h2><%= pluralize(event_form.errors.count, "error") %> prohibited this event from being saved:</h2>
 
       <ul>
-      <% @event.errors.full_messages.each do |message| %>
+      <% event_form.errors.full_messages.each do |message| %>
         <li><%= message %></li>
       <% end %>
       </ul>
@@ -12,24 +12,24 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :codeEvent %><br>
-    <%= f.number_field :codeEvent %>
+    <%= f.label :code_event %><br>
+    <%= f.number_field :code_event %>
   </div>
   <div class="field">
-    <%= f.label :eventType %><br>
-    <%= f.text_field :eventType %>
+    <%= f.label :event_type %><br>
+    <%= f.text_field :event_type %>
   </div>
   <div class="field">
-    <%= f.label :ponenteName %><br>
-    <%= f.text_field :ponenteName %>
+    <%= f.label :ponente_name %><br>
+    <%= f.text_field :ponente_name %>
   </div>
   <div class="field">
-    <%= f.label :personInCharge %><br>
-    <%= f.text_field :personInCharge %>
+    <%= f.label :person_in_charge %><br>
+    <%= f.text_field :person_in_charge %>
   </div>
   <div class="field">
-    <%= f.label :phoneNum %><br>
-    <%= f.text_field :phoneNum %>
+    <%= f.label :phone %><br>
+    <%= f.text_field :phone %>
   </div>
   <div class="field">
     <%= f.label :forniture %><br>
