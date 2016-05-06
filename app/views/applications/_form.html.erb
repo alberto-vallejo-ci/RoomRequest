@@ -1,10 +1,10 @@
-<%= form_for(@request) do |f| %>
-  <% if @request.errors.any? %>
+<%= form_for(application_form, as: :application,  url: application_form.action, method: application_form.method) do |f| %>
+  <% if application_form.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@request.errors.count, "error") %> prohibited this request from being saved:</h2>
+      <h2><%= pluralize(application_form.errors.count, "error") %> prohibited this application from being saved:</h2>
 
       <ul>
-      <% @request.errors.full_messages.each do |message| %>
+      <% application_form.errors.full_messages.each do |message| %>
         <li><%= message %></li>
       <% end %>
       </ul>
@@ -13,31 +13,31 @@
 
   <div class="field">
     <%= f.label :dateRequest %><br>
-    <%= f.date_select :dateRequest %>
+    <%= f.date_select :date_request %>
   </div>
   <div class="field">
     <%= f.label :dateEventI %><br>
-    <%= f.date_select :dateEventI %>
+    <%= f.date_select :date_event_i %>
   </div>
   <div class="field">
     <%= f.label :dateEventF %><br>
-    <%= f.date_select :dateEventF %>
+    <%= f.date_select :date_event_f %>
   </div>
   <div class="field">
     <%= f.label :timeEvent %><br>
-    <%= f.time_select :timeEvent %>
+    <%= f.time_select :time_event %>
   </div>
   <div class="field">
     <%= f.label :eventCode %><br>
-    <%= f.number_field :eventCode %>
+    <%= f.number_field :event_code %>
   </div>
   <div class="field">
     <%= f.label :nameRequesting %><br>
-    <%= f.text_field :nameRequesting %>
+    <%= f.text_field :name_requesting %>
   </div>
   <div class="field">
     <%= f.label :phoneNum %><br>
-    <%= f.text_field :phoneNum %>
+    <%= f.text_field :phone_num %>
   </div>
   <div class="field">
     <%= f.label :place %><br>

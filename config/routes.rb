@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   root 'events#index'
 
   resources :events
-  resources :requests
+  resources :applications
   resources :asistants
   resources :rooms
 end
